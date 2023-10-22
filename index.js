@@ -1,10 +1,11 @@
-const { Client, Intents } = require('discord.js');
+const { Client, GatewayIntentBits } = require('discord.js');
 const sequelize = require('./config/dbConnection');
 const getCommandResponse = require('./commands/index.js');
 const logger = require('./utils/discordLogger');
 
 const token = process.env.TOKEN;
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+// const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
+const client = new Client( {intents: [GatewayIntentBits.Guilds] });
 
 client.once('ready', async () => {
   console.log('Connected to Bot');
