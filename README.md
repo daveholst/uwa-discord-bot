@@ -34,6 +34,7 @@ Replace the above with the correct values for your instance:\
 `CLIENT_ID` : right click on the bot's icon in your 'My Test Server' click copy ID, paste into `.env`\
 `GUILD_ID` : right click on your 'My Test Server' in the servers area and click copy ID paste into `.env`
 
+TODO: This doesn't seem quite right in the explanation
 6. Send the commands (how discord out popualtes `/` bot commands) to your server. Run `npm run deployCommands`
 
 7. You should be able to now run `npm run localDev` and your local copy/version of the bot will be running in your test server. You can test it by typing the `/ping` command in the general channel. The bot should respond with pong!
